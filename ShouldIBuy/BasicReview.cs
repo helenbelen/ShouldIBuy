@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ShouldIBuy
 {
    
-    class BasicReview : ReviewInterface
+   public class BasicReview : ReviewInterface
     {
         public double rating;
         public string description;
@@ -15,25 +15,20 @@ namespace ShouldIBuy
         public int reviewNumber;
 
         public BasicReview (double newRating, string newDescription){
-            reviewID++;
+            reviewID = reviewID + 1;
             reviewNumber = reviewID;
             rating = newRating;
             description = newDescription;
         }
 
-        public double GetRating() {
-            
-            return rating;
-
-        }
-
-        public String GetDescription() {
-
-            return description;
-        }
+        public double GetRating() => rating;
 
 
+        public String GetDescription() => description;
 
+
+        public int GetID() => reviewNumber;
+        
     }
 
 }

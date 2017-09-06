@@ -11,6 +11,7 @@ namespace ShouldIBuy
         string GetName();
         string GetLocation();
         double GetPrice();
+        int GetID();
         string MakeRecommendation();
         void AddReview(BasicReview r);
         void RemoveReview(BasicReview r);

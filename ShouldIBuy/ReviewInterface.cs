@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace ShouldIBuy
 {
-    
+
     public interface ReviewInterface
     {
-        
+
 
         double GetRating();
         String GetDescription();
-        
-        
+        int GetID();
+
+
 
 
     }
+}
