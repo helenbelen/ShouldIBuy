@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace ShouldIBuy
 {
@@ -15,6 +16,7 @@ namespace ShouldIBuy
         string MakeRecommendation();
         void AddReview(BasicReview r);
         void RemoveReview(BasicReview r);
-        double getAverage();
+        int getAverage();
+        string commonReview(ArrayList a);
     }
 }

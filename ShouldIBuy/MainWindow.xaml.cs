@@ -21,25 +21,24 @@ namespace ShouldIBuy
     /// </summary>
     public partial class MainWindow : Window
     {
-        BasicReview r;
+        
         ArrayList availableItems;
+        String recommendationString, numberofRecommendationsString, commonReviewsString;
         public MainWindow()
         {
             InitializeComponent();
             availableItems = new ArrayList();
-            Main();
+            fillListView();
         }
 
-       public void Main()
+       public void fillListView ()
         {
-            BasicItem item1 = new BasicItem("Paper Towels", "Wal-Mart", 2.99);
-            BasicItem item2 = new BasicItem("Shirt", "Target", 5.50);
-            BasicItem item3 = new BasicItem("Soap", "Dollar Tree", 1.00);
+           
 
            
-            availableItems.Add(item1);
-            availableItems.Add(item2);
-            availableItems.Add(item3);
+            availableItems.Add(new BasicItem("Paper Towels", "Wal-Mart", 2.99));
+            availableItems.Add(new BasicItem("Shirt", "Target", 5.50));
+            availableItems.Add(new BasicItem("Soap", "Dollar Tree", 1.00));
 
 
             foreach (BasicItem b in availableItems)
@@ -63,16 +62,16 @@ namespace ShouldIBuy
                 {
                     if (b.GetName() == getSelectedItem())
                     {
-                        r = new BasicReview(rating, comments);
-                        b.AddReview(r);
+                       
+                        b.AddReview(new BasicReview(rating, comments));
                     }
                 }
 
             }
 
+            this.AddReview_Comment.Text = "";
 
-
-
+            updateDisplays();
 
 
         }
@@ -85,22 +84,33 @@ namespace ShouldIBuy
 
         private void Second_Tab_GotFocus(object sender, RoutedEventArgs e)
         {
-            
-
-            if (getSelectedItem()!= null)
-            {
-                foreach (BasicItem b in availableItems)
-                {
-                    if (b.GetName() == getSelectedItem())
-                    {
-                        this.Data_Display.Text = b.numberOfReviews().ToString();
-                    }
-                }
-
-            }
+            updateDisplays();
         }
 
         private void First_Tab_GotFocus(object sender, RoutedEventArgs e)
+        {
+
+            updateDisplays();
+
+
+
+        }
+
+
+        private void Third_Tab_GotFocus(object sender, RoutedEventArgs e)
+        {
+
+            updateDisplays();
+
+
+
+        }
+        private void Item_List_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            updateDisplays();
+        }
+
+        private void getItemInformation_toDisplay()
         {
             if (getSelectedItem() != null)
             {
@@ -108,12 +118,25 @@ namespace ShouldIBuy
                 {
                     if (b.GetName() == getSelectedItem())
                     {
-                        this.Data_Display.Text = "We recommend you to: " + b.MakeRecommendation() + " because this item has an average rating of " + b.getAverage().ToString();
+                        numberofRecommendationsString = b.numberOfReviews().ToString();
+                        recommendationString = b.MakeRecommendation();
+                        commonReviewsString = b.processReviews();
                     }
                 }
 
             }
 
         }
+
+   
+        private void updateDisplays()
+        {
+            getItemInformation_toDisplay();
+            reviews_TextBox.Text = "The Number Of Reviews Posted For This Item " + numberofRecommendationsString;
+            Recomm_TextBox.Text = recommendationString;
+            commonReviews_TextBox.Text = commonReviewsString;
+
+        }
+       
     }
 }
