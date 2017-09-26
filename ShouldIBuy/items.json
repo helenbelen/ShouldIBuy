@@ -1,0 +1,894 @@
+﻿{
+    "products": [
+        {
+            "name": [
+                " Polaroid Snap Touch cameras"
+            ],
+            "reviews": [
+                {
+                    "description": [
+                        "Amazing product. They are very good, they are better now than I am now, but they are very comfortable, I did not look back. This is amazing. Very kind and the best seller."
+                    ],
+                    "rating": [
+                        3
+                    ]
+                },
+                {
+                    "description": [
+                        "definately recommend"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "Otherwise its cute."
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "not impressed"
+                    ],
+                    "rating": [
+                        2
+                    ]
+                },
+                {
+                    "description": [
+                        "definately recommend"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "not satisfied"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "couldve been better"
+                    ],
+                    "rating": [
+                        3
+                    ]
+                },
+                {
+                    "description": [
+                        "couldve been better"
+                    ],
+                    "rating": [
+                        5
+                    ]
+                },
+                {
+                    "description": [
+                        "I love this"
+                    ],
+                    "rating": [
+                        3
+                    ]
+                },
+                {
+                    "description": [
+                        "This little bank is very cute & seems like its durable! Its not very big but if youre only saving pocket change that shouldnt be an issue."
+                    ],
+                    "rating": [
+                        1
+                    ]
+                }
+            ],
+            "location": "ULTA",
+            "price": 11
+        },
+        {
+            "name": [
+                " Kat Von D Alchemist Holographic Palette"
+            ],
+            "reviews": [
+                {
+                    "description": [
+                        "This little bank is very cute & seems like its durable! Its not very big but if youre only saving pocket change that shouldnt be an issue."
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "I really liked it but it came broken. Extremely disappointed but I really thought it was going to be great"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "couldve been better"
+                    ],
+                    "rating": [
+                        3
+                    ]
+                },
+                {
+                    "description": [
+                        "not satisfied"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "definately recommend"
+                    ],
+                    "rating": [
+                        3
+                    ]
+                },
+                {
+                    "description": [
+                        "definately recommend"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "I love this"
+                    ],
+                    "rating": [
+                        2
+                    ]
+                },
+                {
+                    "description": [
+                        "I love this"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "I really liked it but it came broken. Extremely disappointed but I really thought it was going to be great"
+                    ],
+                    "rating": [
+                        5
+                    ]
+                },
+                {
+                    "description": [
+                        "It was okay"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                }
+            ],
+            "location": "Amazon.com",
+            "price": 17
+        },
+        {
+            "name": [
+                " Frosted Flakes"
+            ],
+            "reviews": [
+                {
+                    "description": [
+                        "great product"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "I love this"
+                    ],
+                    "rating": [
+                        2
+                    ]
+                },
+                {
+                    "description": [
+                        "It was okay"
+                    ],
+                    "rating": [
+                        3
+                    ]
+                },
+                {
+                    "description": [
+                        "definately recommend"
+                    ],
+                    "rating": [
+                        2
+                    ]
+                },
+                {
+                    "description": [
+                        "Amazing product. They are very good, they are better now than I am now, but they are very comfortable, I did not look back. This is amazing. Very kind and the best seller."
+                    ],
+                    "rating": [
+                        5
+                    ]
+                },
+                {
+                    "description": [
+                        "Otherwise its cute."
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "not satisfied"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "great product"
+                    ],
+                    "rating": [
+                        3
+                    ]
+                },
+                {
+                    "description": [
+                        "I love this"
+                    ],
+                    "rating": [
+                        3
+                    ]
+                },
+                {
+                    "description": [
+                        "great product"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                }
+            ],
+            "location": "Target",
+            "price": 19
+        },
+        {
+            "name": [
+                " Kat Von D Alchemist Holographic Palette"
+            ],
+            "reviews": [
+                {
+                    "description": [
+                        "I really liked it but it came broken. Extremely disappointed but I really thought it was going to be great"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "Amazing product. They are very good, they are better now than I am now, but they are very comfortable, I did not look back. This is amazing. Very kind and the best seller."
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "not impressed"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "This little bank is very cute & seems like its durable! Its not very big but if youre only saving pocket change that shouldnt be an issue."
+                    ],
+                    "rating": [
+                        3
+                    ]
+                },
+                {
+                    "description": [
+                        "couldve been better"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "Amazing product. They are very good, they are better now than I am now, but they are very comfortable, I did not look back. This is amazing. Very kind and the best seller."
+                    ],
+                    "rating": [
+                        3
+                    ]
+                },
+                {
+                    "description": [
+                        "It was okay"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "great product"
+                    ],
+                    "rating": [
+                        5
+                    ]
+                },
+                {
+                    "description": [
+                        "I love this"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "not impressed"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                }
+            ],
+            "location": "Walmart",
+            "price": 17
+        },
+        {
+            "name": [
+                " Instant Mini 90 Camera"
+            ],
+            "reviews": [
+                {
+                    "description": [
+                        "I really liked it but it came broken. Extremely disappointed but I really thought it was going to be great"
+                    ],
+                    "rating": [
+                        5
+                    ]
+                },
+                {
+                    "description": [
+                        "couldve been better"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "I love this"
+                    ],
+                    "rating": [
+                        3
+                    ]
+                },
+                {
+                    "description": [
+                        "not impressed"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "I love this"
+                    ],
+                    "rating": [
+                        2
+                    ]
+                },
+                {
+                    "description": [
+                        "couldve been better"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "great product"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "Amazing product. They are very good, they are better now than I am now, but they are very comfortable, I did not look back. This is amazing. Very kind and the best seller."
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "not impressed"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "Amazing product. They are very good, they are better now than I am now, but they are very comfortable, I did not look back. This is amazing. Very kind and the best seller."
+                    ],
+                    "rating": [
+                        2
+                    ]
+                }
+            ],
+            "location": "Amazon.com",
+            "price": 2
+        },
+        {
+            "name": [
+                "  Styling Cream Touchable Curl Definer"
+            ],
+            "reviews": [
+                {
+                    "description": [
+                        "I really liked it but it came broken. Extremely disappointed but I really thought it was going to be great"
+                    ],
+                    "rating": [
+                        5
+                    ]
+                },
+                {
+                    "description": [
+                        "great product"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "not satisfied"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "great product"
+                    ],
+                    "rating": [
+                        2
+                    ]
+                },
+                {
+                    "description": [
+                        "Otherwise its cute."
+                    ],
+                    "rating": [
+                        2
+                    ]
+                },
+                {
+                    "description": [
+                        "not impressed"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "Amazing product. They are very good, they are better now than I am now, but they are very comfortable, I did not look back. This is amazing. Very kind and the best seller."
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "It was okay"
+                    ],
+                    "rating": [
+                        5
+                    ]
+                },
+                {
+                    "description": [
+                        "This little bank is very cute & seems like its durable! Its not very big but if youre only saving pocket change that shouldnt be an issue."
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "I love this"
+                    ],
+                    "rating": [
+                        3
+                    ]
+                }
+            ],
+            "location": "Walmart",
+            "price": 7
+        },
+        {
+            "name": [
+                " Vichy Minéral 89 Skin Fortifying Daily Booster"
+            ],
+            "reviews": [
+                {
+                    "description": [
+                        "definately recommend"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "Otherwise its cute."
+                    ],
+                    "rating": [
+                        5
+                    ]
+                },
+                {
+                    "description": [
+                        "Amazing product. They are very good, they are better now than I am now, but they are very comfortable, I did not look back. This is amazing. Very kind and the best seller."
+                    ],
+                    "rating": [
+                        2
+                    ]
+                },
+                {
+                    "description": [
+                        "great product"
+                    ],
+                    "rating": [
+                        3
+                    ]
+                },
+                {
+                    "description": [
+                        "couldve been better"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "Otherwise its cute."
+                    ],
+                    "rating": [
+                        5
+                    ]
+                },
+                {
+                    "description": [
+                        "Amazing product. They are very good, they are better now than I am now, but they are very comfortable, I did not look back. This is amazing. Very kind and the best seller."
+                    ],
+                    "rating": [
+                        2
+                    ]
+                },
+                {
+                    "description": [
+                        "Amazing product. They are very good, they are better now than I am now, but they are very comfortable, I did not look back. This is amazing. Very kind and the best seller."
+                    ],
+                    "rating": [
+                        2
+                    ]
+                },
+                {
+                    "description": [
+                        "definately recommend"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "couldve been better"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                }
+            ],
+            "location": "Amazon.com",
+            "price": 17
+        },
+        {
+            "name": [
+                " La Roche-Posay Toleriane Double Repair Moisturizer UV"
+            ],
+            "reviews": [
+                {
+                    "description": [
+                        "not impressed"
+                    ],
+                    "rating": [
+                        3
+                    ]
+                },
+                {
+                    "description": [
+                        "couldve been better"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "not satisfied"
+                    ],
+                    "rating": [
+                        3
+                    ]
+                },
+                {
+                    "description": [
+                        "definately recommend"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "I love this"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "It was okay"
+                    ],
+                    "rating": [
+                        5
+                    ]
+                },
+                {
+                    "description": [
+                        "definately recommend"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "It was okay"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "I love this"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "I really liked it but it came broken. Extremely disappointed but I really thought it was going to be great"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                }
+            ],
+            "location": "Target",
+            "price": 18
+        },
+        {
+            "name": [
+                " Rodial Smokey Eye Pen in Black"
+            ],
+            "reviews": [
+                {
+                    "description": [
+                        "definately recommend"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "I love this"
+                    ],
+                    "rating": [
+                        2
+                    ]
+                },
+                {
+                    "description": [
+                        "great product"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "This little bank is very cute & seems like its durable! Its not very big but if youre only saving pocket change that shouldnt be an issue."
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "definately recommend"
+                    ],
+                    "rating": [
+                        2
+                    ]
+                },
+                {
+                    "description": [
+                        "couldve been better"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "I love this"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "couldve been better"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "I really liked it but it came broken. Extremely disappointed but I really thought it was going to be great"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "It was okay"
+                    ],
+                    "rating": [
+                        5
+                    ]
+                }
+            ],
+            "location": "ULTA",
+            "price": 17
+        },
+        {
+            "name": [
+                " Instant Mini 90 Camera"
+            ],
+            "reviews": [
+                {
+                    "description": [
+                        "Otherwise its cute."
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "Amazing product. They are very good, they are better now than I am now, but they are very comfortable, I did not look back. This is amazing. Very kind and the best seller."
+                    ],
+                    "rating": [
+                        2
+                    ]
+                },
+                {
+                    "description": [
+                        "great product"
+                    ],
+                    "rating": [
+                        3
+                    ]
+                },
+                {
+                    "description": [
+                        "I love this"
+                    ],
+                    "rating": [
+                        3
+                    ]
+                },
+                {
+                    "description": [
+                        "definately recommend"
+                    ],
+                    "rating": [
+                        4
+                    ]
+                },
+                {
+                    "description": [
+                        "not impressed"
+                    ],
+                    "rating": [
+                        2
+                    ]
+                },
+                {
+                    "description": [
+                        "definately recommend"
+                    ],
+                    "rating": [
+                        3
+                    ]
+                },
+                {
+                    "description": [
+                        "Otherwise its cute."
+                    ],
+                    "rating": [
+                        2
+                    ]
+                },
+                {
+                    "description": [
+                        "definately recommend"
+                    ],
+                    "rating": [
+                        1
+                    ]
+                },
+                {
+                    "description": [
+                        "It was okay"
+                    ],
+                    "rating": [
+                        2
+                    ]
+                }
+            ],
+            "location": "Sephora",
+            "price": 17
+        }
+    ]
+}

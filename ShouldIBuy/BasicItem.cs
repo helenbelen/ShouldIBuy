@@ -41,31 +41,31 @@ namespace ShouldIBuy
                 switch (itemAverage)
                 {
                     case 0:
-                        recomm = "We Recommend You Not Buy";
+                        recomm = "We Recommend You Not Buy. The average score for this item is : " + itemAverage;
                         break;
 
                     case 1:
-                        recomm = "We Recommend You Not Buy";
+                        recomm = "We Recommend You Not Buy. The average score for this item is : " + itemAverage;
                         break;
 
                     case 2:
-                        recomm = "We Recommend You Not Buy";
+                        recomm = "We Recommend You Not Buy. The average score for this item is : " + itemAverage;
                         break;
 
                     case 3:
-                        recomm = "We Recommend That You Wait";
+                        recomm = "We Recommend That You Wait.The average score for this item is : " + itemAverage;
                         break;
 
                     case 4:
-                        recomm = "We Recommend That You Buy";
+                        recomm = "We Recommend That You Buy. The average score for this item is : " + itemAverage;
                         break;
 
                     case 5:
-                        recomm = "We Recommend That You Buy";
+                        recomm = "We Recommend That You Buy. The average score for this item is : " + itemAverage;
                         break;
 
                     default:
-                        recomm = "We Cannot Make A Recommendation";
+                        recomm = "We Cannot Make A Recommendation. The average score for this item is : " + itemAverage;
                         break;
 
                 }
@@ -143,11 +143,9 @@ namespace ShouldIBuy
             //string rowLine = "{0}" + Environment.NewLine;
             string commonWords = Environment.NewLine;
           
-          
-           // int[,] stringArray = new int[firstArraylength + 1, secondArrayLength + 1];
+            // int[,] stringArray = new int[firstArraylength + 1, secondArrayLength + 1];
             
-            
-            for (int i = 0; i <= firstArrayLength; i++)
+             for (int i = 0; i <= firstArrayLength; i++)
             {
                 //rowLine += "\n";
                 for ( int j = 0; j <= secondArrayLength; j++)

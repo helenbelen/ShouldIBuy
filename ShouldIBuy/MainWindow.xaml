@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ShouldIBuy"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="685.055" Width="728.1">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -15,7 +15,7 @@
             <RowDefinition Height="259*"/>
         </Grid.RowDefinitions>
         <Label x:Name="Title" Content="SHOULDIBUY" HorizontalAlignment="Left" Height="62" Margin="10,0,0,0" VerticalAlignment="Top" Width="498" FontFamily="Kozuka Gothic Pr6N B" FontSize="22" Grid.RowSpan="2" VerticalContentAlignment="Center" Background="#FFDFEA64"/>
-        <ListBox x:Name="Item_List" HorizontalAlignment="Left" Height="84" Margin="10,24.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="280" Background="#FFE5E5E5" SelectedIndex="0" Foreground="#FF3E6EAB" SelectionChanged="Item_List_SelectionChanged" FontFamily="Kozuka Gothic Pr6N B"/>
+        <ListBox x:Name="Item_List" HorizontalAlignment="Left" Height="84" Margin="10,24.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="280" Background="#FFE5E5E5" SelectedIndex="0" Foreground="#FF3E6EAB" SelectionChanged="Item_List_SelectionChanged" FontFamily="Kozuka Gothic Pr6N B" FontSize="7"/>
         <Slider x:Name="AddReview_Slider" HorizontalAlignment="Left" Margin="195,137.4,0,0" Grid.Row="1" VerticalAlignment="Top" Height="11" Width="106" Maximum="5" Value="3" IsSnapToTickEnabled="True" TickPlacement="TopLeft" Foreground="White">
             <Slider.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -28,26 +28,51 @@
             </Slider.Effect>
         </Slider>
         <TextBox x:Name="AddReview_Comment" HorizontalAlignment="Left" Height="30" Margin="195,157.4,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="113"/>
-        <TabControl HorizontalAlignment="Left" Height="226" Margin="313,5.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="182" SelectedIndex="1">
+        <TabControl HorizontalAlignment="Left" Height="244" Margin="313,5.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="399" SelectedIndex="1">
             <TabItem x:Name="First_Tab" Header="Item Recommendation" GotFocus="First_Tab_GotFocus">
                 <Grid x:Name="recomm_Grid" Background="#FFE5E5E5">
-                    <TextBox x:Name="Recomm_TextBox" HorizontalAlignment="Left" Height="158" Margin="10,10,0,0" TextWrapping="Wrap" Text="No Data To Display" VerticalAlignment="Top" Width="157" Background="#FFD6FFF8" FontFamily="Kozuka Gothic Pr6N B" IsEnabled="False"/>
+                    <TextBox x:Name="Recomm_TextBox" HorizontalAlignment="Left" Height="158" Margin="10,10,0,0" TextWrapping="Wrap" Text="No Data To Display" VerticalAlignment="Top" Width="373" Background="#FFD6FFF8" FontFamily="Kozuka Gothic Pr6N B" IsEnabled="False"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="Second_Tab" Header="Item Reviews" GotFocus="Second_Tab_GotFocus">
                 <Grid x:Name="review_Grid" Background="#FFE5E5E5">
-                    <TextBox x:Name="reviews_TextBox" HorizontalAlignment="Left" Height="158" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157" Background="#FFD6FFF8" FontFamily="Kozuka Gothic Pr6N B" IsEnabled="False"/>
+                    <TextBox x:Name="reviews_TextBox" HorizontalAlignment="Left" Height="158" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="373" Background="#FFD6FFF8" FontFamily="Kozuka Gothic Pr6N B" IsEnabled="False"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="Third_Tab" Header="Common Opinions" GotFocus="Third_Tab_GotFocus">
                 <Grid x:Name="commonReview_Grid" Background="#FFE5E5E5">
-                    <TextBox x:Name="commonReviews_TextBox" HorizontalAlignment="Left" Height="158" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="157" Background="#FFD6FFF8" FontFamily="Kozuka Gothic Pr6N B" IsEnabled="False"/>
+                    <TextBox x:Name="commonReviews_TextBox" HorizontalAlignment="Left" Height="158" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="373" Background="#FFD6FFF8" FontFamily="Kozuka Gothic Pr6N B" IsEnabled="False"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Fourth_Tab" Header="Search Results" GotFocus="Fourth_Tab_GotFocus">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FFD6FFF8" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid x:Name="searchResults_Grid" Background="#FFE5E5E5">
+                    <ListView x:Name="searchResults_list"  HorizontalAlignment="Left" Height="144" Margin="10,24,0,0" VerticalAlignment="Top" Width="373" Background="#FFD6FFF8" FontFamily="Kozuka Gothic Pr6N B" FontSize="8" SelectionChanged="searchResults_list_SelectionChanged">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
                 </Grid>
             </TabItem>
         </TabControl>
         <Button x:Name="AddReview_Button" Content="Add Review!" HorizontalAlignment="Left" Margin="126,212.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="AddReview_Button_Click"/>
         <Label Content="Assigen A Rating For This Item&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,127.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="180" Height="30" FontFamily="Kozuka Gothic Pr6N B" FontSize="10"/>
         <Label Content="Write A Short Review For This Item" HorizontalAlignment="Left" Margin="10,157.4,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Kozuka Gothic Pr6N B" FontSize="10"/>
+        <WebBrowser x:Name="web_browser" HorizontalAlignment="Left" Height="248" Margin="10,254.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="702">
+            <WebBrowser.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFABABAB" Offset="1"/>
+                </LinearGradientBrush>
+            </WebBrowser.OpacityMask>
+        </WebBrowser>
 
     </Grid>
 </Window>

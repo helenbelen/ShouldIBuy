@@ -13,33 +13,41 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Collections;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.IO;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+
+
 
 namespace ShouldIBuy
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    
+
+public partial class MainWindow : Window
     {
+
+        private ArrayList availableItems, webResults;
         
-        ArrayList availableItems;
-        String recommendationString, numberofRecommendationsString, commonReviewsString;
+        private String recommendationString, numberofRecommendationsString, commonReviewsString;
         public MainWindow()
         {
             InitializeComponent();
             availableItems = new ArrayList();
+            webResults = new ArrayList();           
             fillListView();
         }
 
        public void fillListView ()
         {
-           
 
-           
-            availableItems.Add(new BasicItem("Paper Towels", "Wal-Mart", 2.99));
-            availableItems.Add(new BasicItem("Shirt", "Target", 5.50));
-            availableItems.Add(new BasicItem("Soap", "Dollar Tree", 1.00));
-
+            availableItems = WebOperations.loadProducts();
+            
 
             foreach (BasicItem b in availableItems)
             {
@@ -92,23 +100,44 @@ namespace ShouldIBuy
 
             updateDisplays();
 
-
-
-        }
-
-
+         }
+       
         private void Third_Tab_GotFocus(object sender, RoutedEventArgs e)
         {
 
             updateDisplays();
 
-
-
+            
         }
+
+        private void Fourth_Tab_GotFocus(object sender, RoutedEventArgs e)
+
+        {
+            updateDisplays();
+        }
+
         private void Item_List_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             updateDisplays();
         }
+
+        private void searchResults_list_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            this.webResults = WebOperations.getWebResults();
+            foreach(WebResult w in this.webResults)
+            {
+                if(searchResults_list.SelectedItem != null && searchResults_list.SelectedItem.ToString() == w.Title)
+                {
+                    Uri link = new Uri(w.Link);
+                   web_browser.Navigate(link);
+                   
+                }
+            }
+           
+        }
+
+    
+
 
         private void getItemInformation_toDisplay()
         {
@@ -129,13 +158,24 @@ namespace ShouldIBuy
         }
 
    
-        private void updateDisplays()
+        private async void updateDisplays()
         {
+            Item_List.IsEnabled = false;
             getItemInformation_toDisplay();
             reviews_TextBox.Text = "The Number Of Reviews Posted For This Item " + numberofRecommendationsString;
             Recomm_TextBox.Text = recommendationString;
             commonReviews_TextBox.Text = commonReviewsString;
+           
+          await WebOperations.GetProductAsync(getSelectedItem());
+          this.webResults = WebOperations.getWebResults();
+          searchResults_list.Items.Clear();
+            foreach (WebResult w in webResults)
+            {
 
+                this.searchResults_list.Items.Add(w.Title);
+            }
+            Item_List.IsEnabled = true ;
+          
         }
        
     }
